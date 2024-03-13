@@ -491,8 +491,12 @@ nav #closebtn{
         padding: 40px;
     }
     header a{
-        zoom: 35%;
+        zoom: 25%;
         font-size: 40px;
+        margin-left: 280px;
+    }
+    header select{
+        margin-left: 150px;
     }
 }
 
