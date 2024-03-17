@@ -1,0 +1,721 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    zoom: 60%;
+}
+header h2{
+    color: white;
+    margin-left: 250px;
+}
+nav{
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    padding:20px;
+    zoom: 60%;
+}
+nav img{
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+    margin-left: 10px;
+    border: 2px solid gray;
+}
+nav h2{
+    color: white;
+    line-height: 80px;
+    font-size: 17px;
+}
+nav .socialmedia{
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+nav .socialmedia a{
+    background-color: rgb(44, 38, 38);
+    border-radius: 100%;
+    padding: 5px;
+}
+nav .socialmedia a i{
+    color: white;
+}
+nav .menu a{
+    display: block;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 23px;
+    color: white;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+nav .menu a:hover{
+    color: red;
+}
+nav .menu a i{
+    color: gray;
+    margin-right: 20px;
+}
+.bodypage{
+    position: absolute;
+    right: 0;
+    left: 195px;
+    top: 75px;
+    bottom: 40px;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 2085px;
+    zoom: 60%;
+    background-color: #f3e2a9;
+}
+.bodypage .slider{
+    margin: 50px;
+    margin-left: 160px;
+    margin-right: 160px;
+    position: relative;
+}
+.bodypage .slider .list_imgs{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1770px;
+    height: 350px;
+}
+.bodypage .slider .list_imgs img{
+    width: 1770px;
+    height: 350px;
+    display: none;
+    animation: slideranimation 0.5s;
+}
+@keyframes slideranimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.bodypage .slider p{
+    position: absolute;
+    color: rgb(43, 38, 38);
+    font-weight: bolder;
+    font-size:60px;
+    top: 140px;
+}
+.bodypage .slider .p1{
+    left: 20px;
+}
+.bodypage .slider .p2{
+    right: -20px;
+}
+.bodypage .listbooks h1,.bodypage .Videomarket h1,.bodypage .backgroundarticle > h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.bodypage .backgroundarticle > h1{
+    color: red;
+    font-size: 55px;
+}
+.bodypage .listbooks .books,.bodypage .Videomarket .Videos{
+    display: flex;
+    background-color: rgb(243, 237, 237);
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-bottom: 70px;
+    padding: 30px;
+    width: 1780px;
+    height: 260px;
+}
+.bodypage .Videomarket .Videos{
+    background-color: white;
+}
+.bodypage .listbooks .books .book{
+    background-color: white;
+    color: green;
+    padding: 10px;
+    margin-right: 100px;
+    cursor: pointer;
+    height: 205px;
+    width: 210px;
+}
+.bodypage .listbooks .books .book img{
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+}
+.bodypage .Videomarket .Videos .Video{
+    position: relative;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+.bodypage .Videomarket .Videos .Video img{
+    width: 300px;
+    height: 250px;
+}
+.bodypage .Videomarket .Videos .Video p{
+    position: absolute;
+    right: 10px;
+    top: 260px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.bodypage .Videomarket .Videos .Video i{
+    background-color: gray;
+    color: white;
+    border-radius: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 20px;
+    top: 225px;
+}
+.bodypage .backgroundarticle{
+    background-color: rgb(243, 237, 237);
+    padding: 30px;
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-top: 110px;
+    width: 1700px;
+}
+.bodypage .backgroundarticle .list_article{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.bodypage .backgroundarticle .list_article .article{
+    margin-right: 90px;
+    margin-left: 90px;
+    margin-bottom: 70px;
+    position: relative;
+}
+.bodypage .backgroundarticle .list_article .article img{
+    width: 350px;
+    height: 250px;
+}
+.bodypage .backgroundarticle .list_article .article .date{
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    left: 5px;
+    top: 180px;
+}
+.bodypage .backgroundarticle .list_article .article > h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+.bodypage .backgroundarticle .list_article .article .topic{
+    background-color: rgb(241, 155, 155);
+    border: 1px solid rgb(206, 88, 88);
+    color: rgb(165, 45, 45);
+    font-weight: bolder;
+    font-size: 15px;
+    width: 64px;
+    height: max-content;
+    padding: 7px;
+    position: absolute;
+    right: 5px;
+    top: 270px;
+    text-align: center;
+}
+select{
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px;
+}
+footer{
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    text-align: center;
+    padding: 10px;
+    zoom: 60%;
+}
+footer p{
+    margin-left: 150px;
+    font-size: 20px;
+}
+.bodypage > h1{
+    text-align: center;
+    padding: 40px;
+    font-weight: bolder;
+    font-size: 50px;
+    border-bottom: 5px solid black;
+    margin-left: 850px;
+    margin-right: 850px;
+}
+.bodypage .list_infromation{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 70px;
+    display: flex;
+}
+.bodypage .list_infromation .address,.bodypage .list_infromation .phone,.bodypage .list_infromation .email{
+    background-color: white;
+    width: 550px;
+    height: 630px;
+    padding: 60px;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-right: 50px;
+}
+.bodypage .list_infromation .address i,.bodypage .list_infromation .phone i,.bodypage .list_infromation .email i{
+    zoom: 1550%;
+}
+.bodypage .list_infromation .address h1,.bodypage .list_infromation .phone h1,.bodypage .list_infromation .email h1{
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 40px;
+    font-size: 53px;
+    border-bottom: 5px solid black;
+    padding: 20px;
+
+}
+.bodypage .list_infromation .address p,.bodypage .list_infromation .phone p,.bodypage .list_infromation .email p{
+    margin-left: 35px;
+    margin-right:35px;
+    margin-top: 40px;
+    font-size: 33px;
+    font-weight: bolder;
+    color: gray;
+}
+.bodypage .list_infromation .phone h1{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.bodypage .list_infromation .phone p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bodypage .list_infromation .email p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px;
+    margin-left: 210px;
+    margin-right: 210px;
+    background-color: rgb(185, 245, 245);
+    width: max-content;
+    height: max-content;
+    padding: 40px;
+}
+form textarea{
+    resize: none;
+    width: 450px;
+    height: 450px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+form input{
+    width: 450px;
+    height: 30px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+form textarea::placeholder,form input::placeholder{
+    font-size: 18px;
+}
+form button{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 1s;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: rgb(77, 114, 216);
+}
+form h2{
+    margin-bottom: 50px;
+    border-bottom: 5px solid black;
+    margin-left: 280px;
+    margin-right: 280px;
+    padding-bottom: 40px;
+    font-size: 30px;
+}
+
+header #menubtn,nav #closebtn{
+    color: white;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 40px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    cursor: pointer;
+    display: none;
+}
+nav #closebtn{
+    position: absolute;
+    right: -150px;
+    top: 0;
+}
+.bodypage .element{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.bodypage .element .header_element{
+    display: flex;
+    align-items: center;
+}
+.bodypage .element button{
+    font-size: 30px;
+    padding: 20px;
+    background-color: rgb(196, 186, 186);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.bodypage .element h2{
+    font-size: 40px;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bodypage .element .header_element:hover{
+    color: #04AA6D;
+}
+.bodypage .element ul{
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: rgb(73, 69, 69);
+    line-height: 40px;
+    display: none;
+}
+/*----------------------------------------------------------------------*/
+@media screen and (max-width:425px) {
+    nav{
+        background-color: black;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 100;
+        padding:20px;
+        zoom: 60%;
+        display: none;
+    }
+    .bodypage{
+        position: absolute;
+        right: 0;
+        left:0;
+        top: 280px;
+        bottom: 40px;
+        overflow: auto;
+        overflow-x: hidden;
+        width: 2085px;
+        zoom: 17.4%;
+    }
+    .bodypage .slider .p2{
+        right:20px;
+    }
+    footer p{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    header #menubtn,nav #closebtn{
+        color: white;
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 40px;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        cursor: pointer;
+        display: block;
+    }
+    header #menubtn{
+        color: black;
+    }
+    .bodypage .list_infromation .address,.bodypage .list_infromation .phone,.bodypage .list_infromation .email{
+        background-color: white;
+        width: 670px;
+        height: 750px;
+        padding: 60px;
+        padding-left: 120px;
+        padding-right: 120px;
+        margin-right: 50px;
+    }
+    .bodypage .list_infromation .address p,.bodypage .list_infromation .phone p,.bodypage .list_infromation .email p{
+        margin-left: 10px;
+        margin-right:10px;
+        margin-top: 40px;
+        font-size: 33px;
+        font-weight: bolder;
+        color: gray;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 480px;
+        margin-left: 210px;
+        margin-right: 210px;
+        background-color: rgb(185, 245, 245);
+        width: max-content;
+        height: max-content;
+        padding: 40px;
+    }
+    header a{
+        zoom: 25%;
+        font-size: 40px;
+        margin-left: 280px;
+    }
+    header select{
+        margin-left: 150px;
+    }
+}
+
+/*-------------------------------------------------------------------*/
+
+.loading{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 500;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
+    width: 45px;
+    aspect-ratio: 1;
+    --c: no-repeat linear-gradient(#ffffff 0 0);
+    background: 
+      var(--c) 0%   50%,
+      var(--c) 50%  50%,
+      var(--c) 100% 50%;
+    background-size: 20% 100%;
+    animation: l1 1s infinite linear;
+  }
+  @keyframes l1 {
+    0%  {background-size: 20% 100%,20% 100%,20% 100%}
+    33% {background-size: 20% 10% ,20% 100%,20% 100%}
+    50% {background-size: 20% 100%,20% 10% ,20% 100%}
+    66% {background-size: 20% 100%,20% 100%,20% 10% }
+    100%{background-size: 20% 100%,20% 100%,20% 100%}
+  }
+  /*---------------------------------------------------------------------*/
+  .bodypage .list_book,.bodypage .list_video{
+    padding: 120px;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+  .bodypage .list_book a,.bodypage .list_video video{
+    margin-right: 30px;
+    margin-bottom: 50px;
+  }
+  .bodypage .list_video{
+    padding-left: 396px;
+    padding-right: 396px;
+  }
+  .bodypage .list_video video{
+    width: 600px;
+    height: 500px;
+  }
+  
+  /*--------------------------------------------------------------*/
+  .bodypage .list_article button{
+    cursor: pointer;
+    background-color: rgb(8, 42, 104);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    width: 100px;   
+    margin: 30px;
+    margin-left:50px;
+    margin-right:50px;
+    transition: 0.5s;
+  }
+  .bodypage .list_article button:hover{
+    background-color: white;
+    border: 1px solid rgb(8, 42, 104);
+    color: black;
+  }
+  .bodypage .list_article .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+  }
+  .bodypage .list_article .item img{
+    width: 500px;
+    height: 400px;
+  }
+  .bodypage .list_article{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+  .bodypage .articledetails{
+    padding: 100px;
+  }
+  .bodypage .articledetails img{
+    width: 100%;
+    height: 600px;
+  }
+  .bodypage .articledetails h2{
+    font-size: 50px;
+    margin-top: 50px;
+  }
+  .bodypage .articledetails p{
+    font-size: 40px;
+    margin-top: 50px;
+  }
+  /*-------------------------------------------------*/
+  .bodypage .list_protfolio{
+    padding: 130px;
+  }
+  .bodypage .list_protfolio .item{
+    display: grid;
+    grid-template-columns: 1600px auto;
+    margin-bottom: 50px;
+  }
+  .bodypage .list_protfolio .item img{
+    width: 100px;
+    height: 100px;
+  }
+  .bodypage .list_protfolio .item p{
+    font-size: 30px;
+  }
+  /*------------------------------------------------------*/
+header a,.bodypage .item_info a{
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 200px;
+    padding: 10px 0;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+    background-color: rgba(104, 85, 224, 1);
+    color: white;
+    transition: 0.4s;
+    margin-left: 180px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .bodypage .item_info a{
+    margin-left: 0;
+  }
+  header #loginbtn{
+    margin-left: 90px;
+  }
+  header a:hover,.bodypage .item_info a:hover{
+    border: 3px solid rgba(104, 85, 224, 1);
+    background-color: white;
+    color: rgba(104, 85, 224, 1);
+  }
+
+  /*-----------------------------------------------------*/
+  .bodypage .header_info{
+    padding: 60px;
+    display: flex;
+  }
+  .bodypage .header_info .users,.bodypage .header_info .books,.bodypage .header_info .articles,.bodypage .header_info .videos{
+    width: 800px;
+    height: 400px;
+    padding: 110px;
+    background-color: rgb(170, 142, 99);
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    margin-right: 50px;
+  }
+  .bodypage .item_info{
+    padding: 15px;
+    padding-left: 60px;
+  }
+  .bodypage .item_info h2{
+    background-color: rgb(145, 115, 82);
+    color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  .bodypage .item_info table{
+    border-spacing: 10px;
+  }
+  .bodypage .item_info table tr td{
+    height: 50px;
+    padding-right: 0px;
+    padding-left: 20px;
+    font-size: 30px;
+    border-radius: 10px
+  }
+  .bodypage .item_info .header_table{
+    background-color: rgb(145, 115, 82);
+    color: white;
+  }
+  .bodypage .item_info .body_table{
+    background-color: rgba(199, 171, 118, 0.925);
+  }
+  /*---------------------------------------*/
+  .bodypage .form_addbook,.bodypage .form_addarticle,.bodypage .form_addvideo,.bodypage .form_addprotflio,.bodypage .form_addcontact{
+    background: none;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .bodypage .form_addbook div,.bodypage .form_addarticle div,.bodypage .form_addvideo div,.bodypage .form_addprotflio div,.bodypage .form_addcontact div{
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+  }
+  .bodypage .form_addbook label,.bodypage .form_addarticle label,.bodypage .form_addvideo label,.bodypage .form_addprotflio label,.bodypage .form_addcontact label{
+    margin-right: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.bodypage .form_addbook input,.bodypage .form_addarticle input,.bodypage .form_addvideo input,.bodypage .form_addprotflio input,.bodypage .form_addcontact input{
+    width: 1300px;
+    height: 50px;
+}
+.bodypage .form_addarticle textarea{
+    resize: none;
+    height: 1000px;
+    width: 1350px;
+}
