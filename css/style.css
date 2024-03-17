@@ -76,6 +76,7 @@ nav .menu a i{
     overflow: auto;
     overflow-x: hidden;
     width: 2085px;
+    height:100%;
     zoom: 60%;
     background-color: #f3e2a9;
 }
@@ -244,7 +245,7 @@ select{
 footer{
     background-color: black;
     color: white;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
@@ -511,7 +512,7 @@ nav #closebtn{
 /*-------------------------------------------------------------------*/
 
 .loading{
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
